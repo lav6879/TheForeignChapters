@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+	background-color: beige;
+}
+h1 {
+	font-family: Rock Salt;
+}
+#name {
+	color: indigo;
+}
