@@ -1,11 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Indie+Flower&display=swap');
+.topnav {
+  background-color: #b2a8ff;
+  overflow: hidden;
+  font-family: Festive;
+  width: 100%;
+}
+.img{
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: indigo;
+}
+
+.topnav a:hover {
+  background-color: indigo;
+  color: #CCCCFF;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+}
+
+#title{
+	background-color: #b2a8ff;
+	float: left;
+	font-family: Festive;
+	font-size: 32px;
+	font-weight bold;
+}
 
 body {
-	background-color: beige;
+	background-image: url('mainbackground.jpeg');
+	background-size: auto;
+  	background-repeat: repeat-y;
+  	margin: 0px;
+  	padding: 0px;
 }
-h1 {
-	font-family: Rock Salt;
+p{
+	font-size: 24px;
 }
-#name {
-	color: indigo;
+li{
+	font-family: Indie Flower;
 }
+
+.titleCollage {
+	justify-content: center;
+	display: block;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    width: 100vw;  /* Fills the entire viewport width */
+    
+    /* Flexbox properties */
+    flex-direction: row; /* Elements arranged horizontally */
+    justify-content: space-between; /* Space between elements */
+    align-items: stretch; /* Elements stretch to fill container height */
+    
+    /* Optional styling */
+    padding:5px;
+    gap: 5 px; /* Space between elements */
+}
+.element {
+    flex: 1; 
+    padding: 5px;
+    font-family: Indie Flower;
+    font-size: 24px;
+    
+    /* Center content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+}
+
+.collage-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .collage-item {
+            border-radius: 8px;
+            overflow: visible;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-family: Indie Flower;
+            font-size: 14px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Different sizes for collage items */
+        .item-small {
+            flex: 1 1 150px;
+            height: 150px;
+        }
+
+        .item-large {
+            flex: 1 1 313px;
+            height: 357px;
+        }
+
+        .item-medium {
+            flex: 1 1 500px;
+            height: 700px;
+        }
+
+        .item-wide {
+            flex: 3 600px;
+            height: 180px;
+        }
+
+        .item-tall {
+            flex: 1 1 180px;
+            height: 300px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .collage-container {
+                gap: 10px;
+            }
+            
+            .item-small, .item-medium, .item-large, .item-wide, .item-tall {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item-small, .item-medium, .item-large, .item-wide, .item-tall {
+                flex: 1 1 100%;
+            }
+        }
+
+#welcome {
+	display: block;
+    margin: auto;
+    width: 75%;
+}
+    
