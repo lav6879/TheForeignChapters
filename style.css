@@ -6,6 +6,7 @@
         }
         
         .explore-btn {
+            background-image: url('globe.png');
             position: relative;
             display: block;
             margin: 20px 0;
@@ -104,10 +105,9 @@
         }
         
         .floating-explore .explore-btn {
-            background-color: #6A5ACD;
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
+            width: 75px;
+            height: 75px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -141,6 +141,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Indie Flower;
 }
 
 .topnav {
@@ -236,6 +237,22 @@
     margin: 0;
 }
 
+.aboutcontainer {
+    display: flex;
+    gap: 1em;
+    margin: 2em 5em;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-content {
+    display: flex;
+    gap: 1em;
+    margin: 2em 5em;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .mapvid {
     display: flex;
     justify-content: center;
@@ -247,6 +264,13 @@
     justify-content: center;
     width: fit-content;
     margin: 0 auto;
+}
+
+.text-block{
+    margin: 0px;
+    padding: 0px;
+    gap: 1em;
+    margin: 2em 5em;
 }
 
 .overlay {
@@ -316,7 +340,7 @@ li{
     gap: 1em;
     margin: 2em 5em;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .container2{
@@ -325,6 +349,48 @@ li{
     margin: 2em 5em;
     flex-direction: row;
     justify-content: space-between; 
+}
+
+.flex-container {
+  display: flex;
+  gap: 1em;
+  margin: 2em 5em;
+}
+
+.box {
+  flex: 1;
+  min-height: 100px; 
+  box-sizing: border-box;
+}
+
+.box video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1em;
+    margin: 2em 5em;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.cell {
+    flex: 1;
+}
+
+#lisbonpic{
+    justify-content: center;
+    display: block;
+    margin: auto;
+    height: auto;
 }
 
 header{
@@ -346,20 +412,10 @@ section{
     flex: 2;
 }
 
-.col-left img,
-.col-right img,
-.item1 img,
-.item3 img,
-footer img,
-body > img {
-    height: auto;
-    display: block;
-}
-
-.col-left img,
-.item1 img,
-.item3 img {
+.container > img {
     max-width: none;
+    width: auto;
+    height: auto;
 }
 
 .col-right p {
@@ -443,7 +499,6 @@ footer{
     .item1 img,
     .item3 img,
     footer img,
-    body > img,
     .titleCollage {
         max-width: 100%;
         width: 100%;
@@ -466,11 +521,6 @@ footer{
         width: 100%;
         text-align: center;
         margin-bottom: 1em;
-    }
-    
-    body > img {
-        margin: 1em auto;
-        display: block;
     }
 }
 
