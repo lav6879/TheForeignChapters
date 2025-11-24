@@ -82,5 +82,42 @@
 				Your browser does not support the video tag.
 			</video>
         </footer>
+        <button id="backToTop" class="back-to-top" title="Back to Top">↑</button>
+
+    <script>
+    // Back to Top Button Functionality - Mobile & Tablet Only
+    const backToTopButton = document.getElementById('backToTop');
+
+    // Function to check if device is tablet or mobile
+    function isMobileOrTablet() {
+        return window.innerWidth <= 1024; // Matches our CSS media query
+    }
+
+    // Show/hide button based on scroll and device type
+    function toggleBackToTop() {
+        if (isMobileOrTablet() && (window.pageYOffset > 300)) {
+            backToTopButton.style.display = 'flex';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    }
+
+    // Initial check
+    toggleBackToTop();
+
+    // Listen for scroll events
+    window.addEventListener('scroll', toggleBackToTop);
+
+    // Listen for resize events to handle screen size changes
+    window.addEventListener('resize', toggleBackToTop);
+
+    // Scroll to top when button is clicked
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
 </body>
 </html>
