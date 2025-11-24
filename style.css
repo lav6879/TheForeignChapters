@@ -760,14 +760,14 @@ center {
     }
     
     .floating-explore {
-        top: 40px;
+        top: 35px;
     }
     
     .floating-explore .explore-btn {
         width: 60px;
         height: 60px;
         font-size: 14px;
-        background-size: 75% 75%;
+        background-size: 80% 80%;
     }
 
     .back-to-top {
@@ -805,7 +805,7 @@ center {
         width: 50px;
         height: 50px;
         font-size: 12px;
-        background-size: 70% 70%;
+        background-size: 75% 75%;
     }
     
     .floating-explore {
