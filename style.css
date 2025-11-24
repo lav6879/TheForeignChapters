@@ -292,6 +292,7 @@ h1 {
 /* Make boxes in flex container responsive */
 .flex-container .box {
     flex: 1 1 300px; /* Grow, shrink, with base 300px */
+    min-width: 0;
 }
 
 .grid-container {
@@ -587,10 +588,13 @@ center {
     
     .flex-container {
         flex-direction: column;
+        gap: 0.5em;
     }
     
-    .box {
-        flex: 1 1 100%;
+    .flex-container .box {
+        flex: 1 1 100%; /* Take full width on mobile */
+        min-width: 100%; /* Ensure full width */
+        margin-bottom: 1em; /* Add spacing between stacked videos */
     }
     
     .cont p, .container2 p, .box p, .cell p, .col-right p, p {
@@ -695,9 +699,13 @@ center {
     .cell, .box {
         min-width: 250px; /* Smaller minimum width for very small screens */
     }
-    
+
+    .flex-container {
+        gap: 0.25em; /* Even smaller gap on very small screens */
+    }
+
     .flex-container .box {
-        flex: 1 1 250px; /* Adjust base width for small screens */
+        margin-bottom: 0.75em; /* Adjust spacing for small screens */
     }
 }
 
