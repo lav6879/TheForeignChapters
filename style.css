@@ -16,11 +16,10 @@ img, video {
 body {
     background-image: url('mainbackground.png');
     background-size: cover; /* Changed from auto to cover for better responsiveness */
-    background-repeat: no-repeat; /* Changed from repeat-y */
+    background-position: center center;
     background-attachment: fixed; /* Keep background fixed during scroll */
     margin: 0;
     padding: 0;
-    min-height: 100vh;
 }
 
 p {
@@ -519,7 +518,7 @@ center {
     }
     
     .floating-explore {
-        top: 120px;
+        top: 100px;
         right: 15px;
     }
     
@@ -631,12 +630,25 @@ center {
     }
     
     .floating-explore {
-        top: 80px;
+        top: 70px;
         right: 10px;
     }
 }
 
+@media (max-height: 700px) and (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: top center;
+    }
+}
+
 @media (max-width: 768px) { /* Mobile */
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll; /* Change to scroll for better mobile performance */
+    }
+
     .container, .flex-container, .grid-container, .cont, .aboutcontainer, .about-content {
         margin: 1em;
     }
@@ -710,6 +722,12 @@ center {
 }
 
 @media (max-width: 480px) { /* Small Mobile */
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
     .container, .container2, .aboutcontainer, .about-content {
         margin: 1em 0.5em;
         width: calc(100% - 1em);
@@ -742,14 +760,14 @@ center {
     }
     
     .floating-explore {
-        top: 70px;
+        top: 50px;
     }
     
     .floating-explore .explore-btn {
         width: 60px;
         height: 60px;
         font-size: 14px;
-        background-size: 65% 65%;
+        background-size: 75% 75%;
     }
 
     .back-to-top {
@@ -787,11 +805,11 @@ center {
         width: 50px;
         height: 50px;
         font-size: 12px;
-        background-size: 60% 60%;
+        background-size: 70% 70%;
     }
     
     .floating-explore {
-        top: 60px;
+        top: 40px;
         right: 5px;
     }
 }
