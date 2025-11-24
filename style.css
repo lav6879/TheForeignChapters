@@ -644,7 +644,7 @@ center {
 
 @media (max-width: 768px) { /* Mobile */
     body {
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         background-attachment: scroll; /* Change to scroll for better mobile performance */
     }
@@ -687,7 +687,7 @@ center {
     
     .floating-explore .explore-dropdown {
         position: fixed;
-        top: 70%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
@@ -723,7 +723,7 @@ center {
 
 @media (max-width: 480px) { /* Small Mobile */
     body {
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
         background-attachment: scroll;
     }
@@ -771,11 +771,11 @@ center {
     }
 
     .back-to-top {
-            bottom: 15px;
-            right: 15px;
-            width: 40px;
-            height: 40px;
-            font-size: 18px;
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
     }
     
     .arrows {
@@ -809,7 +809,7 @@ center {
     }
     
     .floating-explore {
-        top: 30px;
+        top: 25px;
         right: 5px;
     }
 }
