@@ -637,7 +637,7 @@ center {
 
 @media (max-height: 700px) and (max-width: 768px) {
     body {
-        background-size: cover;
+        background-size: contain;
         background-position: top center;
     }
 }
@@ -645,8 +645,6 @@ center {
 @media (max-width: 768px) { /* Mobile */
     body {
         background-size: contain;
-        background-position: center center;
-        background-attachment: scroll; /* Change to scroll for better mobile performance */
     }
 
     .container, .flex-container, .grid-container, .cont, .aboutcontainer, .about-content {
@@ -724,8 +722,6 @@ center {
 @media (max-width: 480px) { /* Small Mobile */
     body {
         background-size: contain;
-        background-position: center center;
-        background-attachment: scroll;
     }
 
     .container, .container2, .aboutcontainer, .about-content {
@@ -767,7 +763,7 @@ center {
         width: 60px;
         height: 60px;
         font-size: 14px;
-        background-size: 80% 80%;
+        background-size: 90% 90%;
     }
 
     .back-to-top {
@@ -805,7 +801,7 @@ center {
         width: 50px;
         height: 50px;
         font-size: 12px;
-        background-size: 75% 75%;
+        background-size: 85% 85%;
     }
     
     .floating-explore {
