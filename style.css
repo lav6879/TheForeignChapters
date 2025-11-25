@@ -7,7 +7,6 @@
     font-family: Indie Flower;
 }
 
-/* Add responsive image base rule */
 img, video {
     max-width: 100%;
     height: auto;
@@ -15,34 +14,34 @@ img, video {
 
 body {
     background-image: url('mainbackground.png');
-    background-size: cover; /* Changed from auto to cover for better responsiveness */
+    background-size: cover; 
     background-position: center center;
-    background-attachment: fixed; /* Keep background fixed during scroll */
+    background-attachment: fixed; 
     margin: 0;
     padding: 0;
 }
 
 p {
-    font-size: clamp(16px, 4vw, 24px); /* Responsive font size */
+    font-size: clamp(16px, 4vw, 24px); 
 }
 
 li {
-    font-size: clamp(20px, 5vw, 32px); /* Responsive font size */
+    font-size: clamp(20px, 5vw, 32px); 
 }
 
 h1 {
-    font-size: clamp(24px, 5vw, 36px); /* Responsive font size */
+    font-size: clamp(24px, 5vw, 36px); 
     margin-bottom: 20px;
 }
 
 .tagline {
-    font-size: clamp(18px, 4vw, 28px); /* Responsive font size */
+    font-size: clamp(18px, 4vw, 28px); 
     font-style: italic;
     text-align: center;
     margin-top: 10px;
 }
 
-/* Navigation */
+
 .topnav {
     display: flex;
     justify-content: space-between;
@@ -122,16 +121,15 @@ h1 {
 
 #title {
     font-family: Festive;
-    font-size: clamp(24px, 6vw, 32px); /* Responsive font size */
+    font-size: clamp(24px, 6vw, 32px); 
     font-weight: bold;
 }
 
 .back-to-top {
-    display: none; /* Hidden by default on all devices */
+    display: none; 
 }
 
 
-/* Explore Component */
 .explore-container {
     position: relative;
     display: inline-block;
@@ -232,7 +230,6 @@ h1 {
     display: block;
 }
 
-/* Floating Explore */
 .floating-explore {
     position: fixed;
     top: 120px;
@@ -251,7 +248,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
 
-    background-size: 100% 100%; /* Adjust this percentage to fit your globe perfectly */
+    background-size: 100% 100%; 
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
@@ -272,7 +269,6 @@ h1 {
     left: auto;
 }
 
-/* Layout Components */
 .container, .flex-container, .grid-container, .cont, .aboutcontainer, .about-content {
     margin: 2em 1em; /* Reduced side margins for mobile */
     width: calc(100% - 2em); /* Ensure proper width calculation */
@@ -300,19 +296,18 @@ h1 {
 .flex-container {
     display: flex;
     gap: 1em;
-    flex-wrap: wrap; /* Ensure boxes wrap on mobile */
+    flex-wrap: wrap; 
 }
 
-/* Make boxes in flex container responsive */
 .flex-container .box {
-    flex: 1 1 300px; /* Grow, shrink, with base 300px */
+    flex: 1 1 300px; 
     min-width: 0;
 }
 
 .grid-container {
     display: flex;
     flex-direction: column;
-    height: auto; /* Changed from 100vh to auto */
+    height: auto; 
     gap: 1em;
     min-height: auto;
 }
@@ -320,14 +315,14 @@ h1 {
 .row {
     display: flex;
     flex: 1;
-    flex-wrap: wrap; /* Added for responsiveness */
+    flex-wrap: wrap;
 }
 
 .cell, .box {
     flex: 1;
     min-height: 100px;
     box-sizing: border-box;
-    min-width: 300px; /* Minimum width before wrapping */
+    min-width: 300px; 
 }
 
 .aboutcontainer, .about-content {
@@ -337,9 +332,8 @@ h1 {
     justify-content: space-between;
 }
 
-/* Content Styling */
 .cont p, .container2 p, .box p, .cell p, .col-right p {
-    font-size: clamp(18px, 4vw, 34px); /* Responsive font size */
+    font-size: clamp(18px, 4vw, 34px); 
     line-height: 1.4;
 }
 
@@ -363,7 +357,6 @@ h1 {
     height: auto;
 }
 
-/* Section Layout */
 section {
     flex: 2;
     display: flex;
@@ -379,7 +372,6 @@ section {
     line-height: 1.6;
 }
 
-/* Utility Classes */
 #welcome, .audionarration {
     margin: auto;
     display: block;
@@ -411,16 +403,16 @@ footer img {
 }
 
 .text-block {
-    margin: 2em 1em; /* Reduced side margins */
+    margin: 4em 2em; 
     padding: 0;
     gap: 1em;
+    font-size: 32px;
 }
 
 center {
     margin: 30px 0;
 }
 
-/* About Page Styles */
 .mapvid {
     display: flex;
     justify-content: center;
@@ -433,7 +425,6 @@ center {
     border-radius: 20px;
 }
 
-/* Image Map Styles */
 .imagemap {
     position: relative;
     display: flex;
@@ -482,8 +473,7 @@ center {
     margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) { /* Tablet */
+@media (max-width: 1024px) { 
     .container, .flex-container, .grid-container, .cont, .aboutcontainer, .about-content {
         margin: 1.5em 3em;
     }
@@ -657,9 +647,9 @@ center {
     }
     
     .flex-container .box {
-        flex: 1 1 100%; /* Take full width on mobile */
-        min-width: 100%; /* Ensure full width */
-        margin-bottom: 1em; /* Add spacing between stacked videos */
+        flex: 1 1 100%; 
+        min-width: 100%; 
+        margin-bottom: 1em; 
     }
     
     .cont p, .container2 p, .box p, .cell p, .col-right p, p {
@@ -719,7 +709,7 @@ center {
     }
 }
 
-@media (max-width: 480px) { /* Small Mobile */
+@media (max-width: 480px) { 
     body {
         background-size: contain;
     }
@@ -783,19 +773,18 @@ center {
     }
     
     .cell, .box {
-        min-width: 250px; /* Smaller minimum width for very small screens */
+        min-width: 250px; 
     }
 
     .flex-container {
-        gap: 0.25em; /* Even smaller gap on very small screens */
+        gap: 0.25em; 
     }
 
     .flex-container .box {
-        margin-bottom: 0.75em; /* Adjust spacing for small screens */
+        margin-bottom: 0.75em; 
     }
 }
 
-/* Update floating explore for very small screens */
 @media (max-width: 360px) {
     .floating-explore .explore-btn {
         width: 50px;
@@ -810,7 +799,6 @@ center {
     }
 }
 
-/* Add specific rule for title collage */
 .titleCollage {
     max-width: 100%;
     height: auto;
@@ -818,7 +806,7 @@ center {
     margin: 0 auto;
 }
 
-/* Ensure topcenterpic is responsive */
+
 .topcenterpic {
     max-width: 100%;
     height: auto;
